@@ -5,6 +5,7 @@ import { DeviceDetailsPageComponent } from "./device-details-page/device-details
 import { DeviceListComponent } from "./device-list/device-list.component";
 
 const deviceRoutes:Routes = [
+    
     {
         path:'device-list',
         component:DeviceListComponent

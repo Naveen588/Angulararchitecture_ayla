@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DeviceListComponent } from './device-list/device-list.component';
 import { DeviceDetailsPageComponent } from './device-details-page/device-details-page.component';
 import { DeviceAdditionComponent } from './device-addition/device-addition.component';
+import { deviceRoutingModule } from './device-routing.module';
 
 
 
@@ -13,7 +14,8 @@ import { DeviceAdditionComponent } from './device-addition/device-addition.compo
     DeviceAdditionComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    deviceRoutingModule
   ],
   exports: [
     DeviceAdditionComponent,

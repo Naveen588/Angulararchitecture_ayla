@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DevicesModule } from './devices/devices.module';
+// import { DevicesModule } from './devices/devices.module';
 
 const routes: Routes = [
+  
   {
     path:'devices',
-    loadChildren: ()=> 
+    loadChildren:()=> 
     import("./devices/devices.module").then((m) => m.DevicesModule)
   }
 ];
