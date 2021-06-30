@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DevicesModule } from './devices/devices.module';
 import { EndUsersModule } from './end-users/end-users.module';
+import { MaterialModule } from './material/material.module';
+import { DashboardModule } from './modules/dashboard/dashboard.module';
 
 
 @NgModule({
@@ -17,7 +19,10 @@ import { EndUsersModule } from './end-users/end-users.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     DevicesModule,
-    EndUsersModule
+    EndUsersModule,
+    DashboardModule,
+    MaterialModule
+  
 
   ],
   providers: [],
