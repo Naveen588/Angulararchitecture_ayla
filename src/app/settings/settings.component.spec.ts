@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EndUsersAdditionComponent } from './end-users-addition.component';
+import { SettingsComponent } from './settings.component';
 
-describe('EndUsersAdditionComponent', () => {
-  let component: EndUsersAdditionComponent;
-  let fixture: ComponentFixture<EndUsersAdditionComponent>;
+describe('SettingsComponent', () => {
+  let component: SettingsComponent;
+  let fixture: ComponentFixture<SettingsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EndUsersAdditionComponent ]
+      declarations: [ SettingsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EndUsersAdditionComponent);
+    fixture = TestBed.createComponent(SettingsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

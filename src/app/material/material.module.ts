@@ -7,11 +7,12 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatCardModule} from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 
 
 const material=[MatButtonModule,MatToolbarModule,MatIconModule,MatSidenavModule,MatMenuModule,
-MatCardModule,FlexLayoutModule]
+MatCardModule,FlexLayoutModule,MatSlideToggleModule]
 @NgModule({
   imports: [material],
   exports: [material]
