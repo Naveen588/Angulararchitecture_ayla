@@ -10,7 +10,9 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { ProjectComponent } from './project/project.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SettingsComponent } from './settings/settings.component';
-
+import { ActivitiesComponent } from './activities/activities.component';
+import { DeviceListComponent } from './device-list/device-list.component';
+import {NgxDatatableModule} from '@swimlane/ngx-datatable'
 
 
 @NgModule({
@@ -20,14 +22,16 @@ import { SettingsComponent } from './settings/settings.component';
     SidenavComponent,
     ProjectComponent,
     ProfileComponent,
-    SettingsComponent
+    SettingsComponent,
+    ActivitiesComponent,
+    DeviceListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    
     MaterialModule,
+    NgxDatatableModule
     
   
 
