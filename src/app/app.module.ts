@@ -10,6 +10,9 @@ import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { ProjectComponent } from './project/project.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SettingsComponent } from './settings/settings.component';
+
 
 
 @NgModule({
@@ -17,7 +20,9 @@ import { ProjectComponent } from './project/project.component';
     AppComponent,
     HeaderComponent,
     SidenavComponent,
-    ProjectComponent
+    ProjectComponent,
+    ProfileComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +30,8 @@ import { ProjectComponent } from './project/project.component';
     BrowserAnimationsModule,
     DevicesModule,
     EndUsersModule,
-    MaterialModule
+    MaterialModule,
+    
   
 
   ],

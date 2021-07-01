@@ -1,0 +1,35 @@
+.matcardimage{
+    // margin-left: 10px;
+    height: 20rem;
+    width: 100%;
+}
+.matbutton{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 2;
+    border-radius: 9999px;
+    text-align: center;
+    width: 256PX;
+     margin-bottom: 20px;
+    // background-color: #4F46E5;
+}
+.matinput{
+    display: flex;
+    align-self: stretch;
+    width: 100%;
+    height: 52px;
+    caret-color:blue;
+    margin: 14px 0;
+    padding: 0 6px 0 0;
+    transform: none;
+}
+.createimage{
+     height: 3rem;
+      width: 3rem;
+      border-radius: 9999px;
+      min-width: 3rem;
+  
+}
