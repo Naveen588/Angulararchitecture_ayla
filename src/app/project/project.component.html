@@ -1,0 +1,18 @@
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="20px" style="display:flex">
+      <div fxFlex="15%" *ngFor='let arr of ["summary","override","issues","features"]'>
+        <mat-card class="mat-elevation-z4" style=" border-radius: 25px;" >
+          <mat-card-header>
+            <mat-card-title style="margin-bottom:50px; margin-right: 90px;">{{arr}}</mat-card-title>
+          </mat-card-header>
+          <text style="font-size: 64px;padding: 25px;margin-left: 25px;">21</text>
+          <mat-card-content>
+            <p style="margin-left: 50px;">
+              Due tasks
+            </p>
+          </mat-card-content>
+          <text style="margin-left: 50px;">completed</text>
+        </mat-card>
+      </div>
+    </div>
+    </div>

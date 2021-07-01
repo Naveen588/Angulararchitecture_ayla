@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DeviceListComponent } from './device-list/device-list.component';
+// import { DeviceListComponent } from '../modules/device-list/device-list.component';
 import { DeviceDetailsPageComponent } from './device-details-page/device-details-page.component';
 import { DeviceAdditionComponent } from './device-addition/device-addition.component';
 
@@ -8,7 +8,7 @@ import { DeviceAdditionComponent } from './device-addition/device-addition.compo
 
 @NgModule({
   declarations: [
-    DeviceListComponent,
+    // DeviceListComponent,
     DeviceDetailsPageComponent,
     DeviceAdditionComponent
   ],
@@ -18,7 +18,6 @@ import { DeviceAdditionComponent } from './device-addition/device-addition.compo
   exports: [
     DeviceAdditionComponent,
     DeviceDetailsPageComponent,
-    DeviceListComponent
   ]
 })
 export class DevicesModule { }

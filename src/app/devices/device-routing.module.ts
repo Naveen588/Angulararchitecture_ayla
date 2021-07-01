@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule,Routes } from "@angular/router";
 import { DeviceAdditionComponent } from "./device-addition/device-addition.component";
 import { DeviceDetailsPageComponent } from "./device-details-page/device-details-page.component";
-import { DeviceListComponent } from "./device-list/device-list.component";
+import { DeviceListComponent } from "../modules/device-list/device-list.component";
 
 const deviceRoutes:Routes = [
     {
