@@ -1,18 +1,85 @@
-<div class="content">
-    <div fxLayout="row wrap" fxLayoutGap="20px" style="display:flex">
-      <div fxFlex="15%" *ngFor='let arr of ["summary","override","issues","features"]'>
-        <mat-card class="mat-elevation-z4" style=" border-radius: 25px;" >
-          <mat-card-header>
-            <mat-card-title style="margin-bottom:50px; margin-right: 90px;">{{arr}}</mat-card-title>
-          </mat-card-header>
-          <text style="font-size: 64px;padding: 25px;margin-left: 25px;">21</text>
-          <mat-card-content>
-            <p style="margin-left: 50px;">
-              Due tasks
-            </p>
-          </mat-card-content>
-          <text style="margin-left: 50px;">completed</text>
-        </mat-card>
-      </div>
-    </div>
-    </div>
+<mat-drawer-container>
+  <mat-card fxLayout="row wrap" fxLayoutGap="30px">
+    <mat-card class="child 1">
+      <mat-card-header>
+        <div style="display: flex">
+          <text class="desname">Summary</text>
+          <mat-icon class="vert">more_vert</mat-icon>
+        </div>
+      </mat-card-header>
+      <mat-card-content>
+        <div style="color: #3b82f6" class="num">21</div>
+        <div style="color: #2563eb">
+          <span class="role">Due Tasks</span>
+        </div>
+        <div class="update">completed: 13</div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="child 2">
+      <mat-card-header>
+        <div style="display: flex">
+          <text class="desname">Summary</text>
+          <mat-icon class="vert">more_vert</mat-icon>
+        </div>
+      </mat-card-header>
+      <mat-card-content>
+        <div style="color: #ef4444" class="num">17</div>
+        <div style="color: #dc2626">
+          <span class="role">Due Tasks</span>
+        </div>
+        <div class="update">completed: 13</div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="child 3">
+      <mat-card-header>
+        <div style="display: flex">
+          <text class="desname">Summary</text>
+          <mat-icon class="vert">more_vert</mat-icon>
+        </div>
+      </mat-card-header>
+      <mat-card-content>
+        <div style="color: #f59e0b" class="num">24</div>
+        <div style="color: #d97706">
+          <span class="role">Due Tasks</span>
+        </div>
+        <div class="update">completed: 13</div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="child 4">
+      <mat-card-header>
+        <div style="display: flex">
+          <text class="desname">Summary</text>
+          <mat-icon class="vert">more_vert</mat-icon>
+        </div>
+      </mat-card-header>
+      <mat-card-content>
+        <div style="color: #22c55e" class="num">38</div>
+        <div style="color: #16a34a">
+          <span class="role">Due Tasks</span>
+        </div>
+        <div class="update">completed: 13</div>
+      </mat-card-content>
+    </mat-card>
+  </mat-card>
+
+  <div class="device-list">
+    <!-- <app-device-list (toggleRightSidebarForMe)="rightSideBar()"></app-device-list> -->
+    <app-device-list
+      (toggleRightSidebarForMe)="rightSideBar()"
+    ></app-device-list>
+  </div>
+
+  <mat-drawer
+    mode="side"
+    [opened]="sideBarOpen"
+    position="end"
+    style="
+      border-color: purple;
+      height: 100%;
+      width: 25%;
+      background-color: red;
+    "
+  >
+    <app-right-sidenav></app-right-sidenav>
+  </mat-drawer>
+</mat-drawer-container>

@@ -12,7 +12,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { DeviceListComponent } from './device-list/device-list.component';
-import {NgxDatatableModule} from '@swimlane/ngx-datatable'
+import {NgxDatatableModule} from '@swimlane/ngx-datatable';
+import { RightSidenavComponent } from './right-sidenav/right-sidenav.component'
+import { ProviderService } from './provider.service';
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import {NgxDatatableModule} from '@swimlane/ngx-datatable'
     ProfileComponent,
     SettingsComponent,
     ActivitiesComponent,
-    DeviceListComponent
+    DeviceListComponent,
+    RightSidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,7 @@ import {NgxDatatableModule} from '@swimlane/ngx-datatable'
   
 
   ],
-  providers: [],
+  providers: [ProviderService],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA,NO_ERRORS_SCHEMA]
 })
