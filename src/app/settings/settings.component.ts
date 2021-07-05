@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettingsComponent implements OnInit {
 
+  notifications:boolean=false;
+  secure:boolean=false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  notification(){
+    this.notifications=true
+  }
+  security(){
+    this.secure=true
   }
 
 }
