@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProviderService } from '../provider.service';
 
 @Component({
   selector: 'app-project',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project.component.scss']
 })
 export class ProjectComponent implements OnInit {
+  sideBarOpen:boolean=false
 
-  constructor() { }
+  constructor(private service:ProviderService) { 
+    this.sideBarOpen = this.service.toggle;
+
+  }
+  
 
   ngOnInit(): void {
+    console.log("sidebar open",this.sideBarOpen)
   }
+  rightSideBar(){
+    this.sideBarOpen=!this.sideBarOpen
+  }
+
+  
 
 }

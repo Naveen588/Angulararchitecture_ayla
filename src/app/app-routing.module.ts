@@ -4,9 +4,16 @@ import { ActivitiesComponent } from './activities/activities.component';
 import { DeviceListComponent } from './device-list/device-list.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProjectComponent } from './project/project.component';
+import { RightSidenavComponent } from './right-sidenav/right-sidenav.component';
 import { SettingsComponent } from './settings/settings.component';
 
 const routes: Routes = [
+  {
+    path:'',
+    redirectTo:'project',
+    pathMatch:'full'
+
+  },
   {
     path:'project',
     component:ProjectComponent
@@ -26,6 +33,10 @@ const routes: Routes = [
   {
     path:'devicelist',
     component:DeviceListComponent
+  },
+  {
+    path:'rightsidenav',
+    component:RightSidenavComponent
   }
 ];
 
