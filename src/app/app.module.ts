@@ -12,7 +12,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { DeviceListComponent } from './device-list/device-list.component';
-import {NgxDatatableModule} from '@swimlane/ngx-datatable'
+import {NgxDatatableModule} from '@swimlane/ngx-datatable';
 
 
 @NgModule({

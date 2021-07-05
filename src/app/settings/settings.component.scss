@@ -1,0 +1,44 @@
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+    background-color: #4F46E5;
+}
+.hello{
+    padding-top: 5%;
+    padding-left: 5%;
+}
+.w-full {
+    width: 100%!important;
+}
+.text-xl {
+    font-size: 1.125rem!important;
+}
+.leading-6 {
+    line-height: 1.5rem!important;
+}
+.font-medium {
+    font-weight: 500!important;
+}
+.grid-cols-1 {
+    grid-template-columns: repeat(1,minmax(0,1fr))!important;
+}
+.gap-6 {
+    grid-gap: 1.5rem!important;
+    gap: 1.5rem!important;
+}
+.w-full {
+    width: 100%!important;
+}
+.mt-8 {
+    margin-top: 2rem!important;
+}
+.grid {
+    display: grid!important;
+}
+.justify-between {
+    justify-content: space-between!important;
+}
+.items-center {
+    align-items: center!important;
+}
+.flex {
+    display: flex!important;
+}
