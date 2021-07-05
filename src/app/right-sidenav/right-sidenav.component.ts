@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ProviderService } from '../provider.service';
 
 @Component({
   selector: 'app-right-sidenav',
@@ -6,10 +7,22 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./right-sidenav.component.scss']
 })
 export class RightSidenavComponent implements OnInit {
+  getRowData=[]
 
-  constructor() { }
+  constructor(private service:ProviderService) { 
+    // this.getRowData=this.service.rowData
+  }
 
   ngOnInit(): void {
+  this.getRowData=this.service.rowData
+
+    // this.hello()
+    
+  }
+  hello(){
+    console.log("asdsfghjkl;kljkhjghgfd",this.service.rowData);
+
+
   }
 
 }
