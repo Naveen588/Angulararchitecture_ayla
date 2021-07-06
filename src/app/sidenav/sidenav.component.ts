@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ProviderService } from '../provider.service';
 
 @Component({
   selector: 'app-sidenav',
@@ -8,9 +9,14 @@ import { Router } from '@angular/router';
 })
 export class SidenavComponent implements OnInit {
 
+  as:any
+
   constructor(private router:Router) { }
 
   ngOnInit(): void {
+    // this.as=this.service.rowData
+    console.log("myroe data",this.as)
+
   }
   profile(){
     this.router.navigate(['./profile'])
@@ -24,6 +30,9 @@ export class SidenavComponent implements OnInit {
   }
   activities(){
     this.router.navigate(['./activities'])
+  }
+  contacts(){
+    this.router.navigate(['./contacts'])
   }
 
 }

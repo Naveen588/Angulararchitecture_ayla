@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ActivitiesComponent } from './activities/activities.component';
+import { ContactsComponent } from './contacts/contacts.component';
 import { DeviceListComponent } from './device-list/device-list.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProjectComponent } from './project/project.component';
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path:'rightsidenav',
     component:RightSidenavComponent
+  },
+  {
+    path:'contacts',
+    component:ContactsComponent
   }
 ];
 

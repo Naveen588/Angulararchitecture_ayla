@@ -15,6 +15,7 @@ import { DeviceListComponent } from './device-list/device-list.component';
 import {NgxDatatableModule} from '@swimlane/ngx-datatable';
 import { RightSidenavComponent } from './right-sidenav/right-sidenav.component'
 import { ProviderService } from './provider.service';
+import { ContactsComponent } from './contacts/contacts.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ProviderService } from './provider.service';
     SettingsComponent,
     ActivitiesComponent,
     DeviceListComponent,
-    RightSidenavComponent
+    RightSidenavComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,

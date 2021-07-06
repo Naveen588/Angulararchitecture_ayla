@@ -2,7 +2,7 @@
   <img
     src="http://angular-material.fusetheme.com/assets/images/logo/logo.svg"
   />
-  <mat-icon matBadge="3" matBadgeColor="accent" matBadgeSize="small" style="color: #94a3b8; margin-left: 60%; font: 24px">
+  <mat-icon matBadge="3" matBadgeColor="primary" matBadgeSize="small" style="color: #94a3b8; margin-left: 60%; font: 24px">
     notifications
   </mat-icon>
   <mat-icon style="color: #94a3b8; font: 24px; padding-left: 10px"
@@ -43,6 +43,10 @@
   <mat-icon>school</mat-icon>
   <span class="items">Academy</span>
 </button>
+<button mat-button class="menu-button" (click)='contacts()'>
+  <mat-icon>groups</mat-icon>
+  <span class="items">contacts</span>
+</button>
 <button mat-button class="menu-button">
   <mat-icon>calendar_today</mat-icon>
   <span class="items">Calender</span>
@@ -57,7 +61,7 @@
 
         
 
-<div style="background-color: turquoise;">
+<!-- <div style="background-color: turquoise;">
 <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
 
   <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200" />
@@ -88,4 +92,4 @@
   </button>
 
 </mat-sidenav>
-</div>
+</div> -->

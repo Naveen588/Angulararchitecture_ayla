@@ -11,12 +11,15 @@ export class RightSidenavComponent implements OnInit {
 
   constructor(private service:ProviderService) { 
     // this.getRowData=this.service.rowData
+    // this.hello()
   }
 
   ngOnInit(): void {
   this.getRowData=this.service.rowData
+  console.log("hellodfghjkjhgfd");
+  
 
-    // this.hello()
+    this.hello()
     
   }
   hello(){
