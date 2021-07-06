@@ -1,0 +1,15 @@
+<div class="container">
+    <div  style="display: flex;justify-content: space-between; align-items: center;padding:10px 10px;">
+        <h2>Row details</h2>
+        <button mat-button class="menu-button">
+            <mat-icon (toggleRightSidebarForMe)="hello()">close</mat-icon>
+            
+          </button>
+    </div>
+    <div>
+        <ul *ngFor='let data of getRowData'>
+            <li>{{data}}</li>
+            <li></li>
+        </ul>
+    </div>
+</div>

@@ -5,13 +5,14 @@ import { Injectable } from '@angular/core';
 })
 export class ProviderService {
 
-  toggle:boolean= false
+  toggle:boolean= false;
+  rowData=[];
 
   constructor() { }
 
   toggler(){
     this.toggle=!this.toggle
-    console.log("service called",this.toggle)
+    console.log("service calledasdfgh",this.rowData)
   }
 
 }
