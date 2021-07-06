@@ -15,6 +15,7 @@ import { DeviceListComponent } from './device-list/device-list.component';
 import {NgxDatatableModule} from '@swimlane/ngx-datatable';
 import { RightSidenavComponent } from './right-sidenav/right-sidenav.component'
 import { ProviderService } from './provider.service';
+import {MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ProviderService } from './provider.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    NgxDatatableModule
+    NgxDatatableModule,
+    MatInputModule
     
   
 

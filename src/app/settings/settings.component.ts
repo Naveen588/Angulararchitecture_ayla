@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-settings',
@@ -17,9 +18,15 @@ export class SettingsComponent implements OnInit {
 
   notification(){
     this.notifications=true
+    this.secure=false
   }
   security(){
     this.secure=true
+    this.notifications=false
   }
+  emailFormControl = new FormControl('', [
+    Validators.required,
+    Validators.email,
+  ]);
 
 }
